@@ -7,75 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optique, Inc.</title>
   <link rel="icon" type="image/icon" href="../favicon.ico">
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="../css/materialize-social.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script src="../semantic/dist/semantic.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 </head>
 
 <body>
   <header class="subnav-hero-section">
-    <a href="../index.html"><img id="logo" src="../images/banner.png" /></a>
+    <a href="../index.html"><img id="logo" src="../img/banner.png" /></a>
     <ul class="subnav-hero-subnav">
       <li><a href="../about/index.html">ABOUT</a></li>
-      <li><a href="../index.html">HOME</a></li>
-      <li><a href="#"  class="is-active">CONTACT</a></li>
+      <li><a href="../index.html" >HOME</a></li>
+      <li><a href="#" class="is-active">CONTACT</a></li>
     </ul>
   </header>
-  <div class="form-container">
-      <div class="translucent-form-overlay">
-        <h2>Request <br> Information</h2>
-        <form class="ui form" method="POST">
-          <div class="field">
-            <label style="color:white"><h3>What's your name?</h3></label>
-            <input type="text" name="fullName" placeholder="Enter full name . . . ">
-          </div>
-          <div class="field">
-            <label style="color:white"><h3>What's your email address?</h3></label>
-            <input type="text" name="email" placeholder="Enter your email . . .">
-          </div>
-          <div class="field">
-            <label style="color:white"><h3>What services are you interested in?</h3></label>
-            <select name="services" multiple="" class="ui dropdown" id="select">
-              <option value="">Choose services . . .</option>
-              <option value="socialMedia">Social Media Management</option>
-              <option value="crowdfunding">Crowdfunding Campaign Management</option>
-              <option value="logo">Logo Design</option>
-              <option value="D&D">Website Design & Development</option>
-              <option value="hosting">Web Hosting</option>
-              <option value="marketingMaterial">Marketing Material</option>
-              <option value="eCommerce">E-Commerce Management</option>
-              <option value="photo">Photography</option>
-              <option value="video">Videography</option>
-              <option value="ads">Digital Advertising</option>
-              <option value="brandStrategy">Brand Strategy</option>
-              <option value="studioTime">Studio Time</option>
-            </select>
-          </div>
-          <div class="ui message error">
-            
-          </div>
-          <div class="button-container">
-            <button class="button button-rounded-hover" type="submit">Submit</button>
-          </div>
-        </form>
-        <script type="text/javascript" src="js/app.js"></script>
-    </div>
+  <div class="row" id="contact">
+    <form class="col s12">
+      <div class="input-field col s6">
+        <input id="name" type="text" class="validate">
+        <label for="name">What's your name?</label>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">What's your email address?</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+        <select multiple>
+          <option value="" disabled selected>Which services would you be interested in?</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <button class="btn waves-effect waves-light orange" type="submit" name="action">Send
+        <i class="material-icons right">send</i>
+      </button>  
+    </form>
   </div>
-
-  <div class="rounded-social-buttons">
-    <a class="social-button facebook" href="https://www.facebook.com/optiqueMarketing" target="_blank"></a>
-    <a class="social-button twitter" href="https://twitter.com/optique_io" target="_blank"></a>
-    <a class="social-button linkedin" href="https://www.linkedin.com/company/optique-marketing-inc/" target="_blank"></a>
-    <a class="social-button instagram" href="https://www.instagram.com/optique_io/" target="_blank"></a>
+  <div class="social">
+    <a class="waves-effect waves-light btn-floating social facebook" href="https://www.facebook.com/optiqueMarketing" target="_blank"><i class="fab fa-facebook"></i>On Facebook</a>
+    <a class="waves-effect waves-light btn-floating social twitter" href="https://twitter.com/optique_io" target="_blank"><i class="fab fa-twitter"></i>On Twitter</a>
+    <a class="waves-effect waves-light btn-floating social linkedin" href="https://www.linkedin.com/company/optique-marketing-inc/" target="_blank"><i class="fab fa-linkedin"></i>On LinkedIn</a>
+    <a class="waves-effect waves-light btn-floating social instagram" href="https://www.instagram.com/optique_io/" target="_blank"><i class="fab fa-instagram"></i>On Instagram</a>
   </div>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

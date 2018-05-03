@@ -1,0 +1,94 @@
+body {
+  background-color: #FF9800;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+img#logo {
+  width: 30em;
+}
+
+
+.subnav-hero-section {
+
+  background: #2196F3;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+.subnav-hero-section .subnav-hero-headline {
+  color: #fefefe;
+}
+
+.subnav-hero-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+}
+
+.subnav-hero-subnav li {
+  float: none;
+  display: inline-block;
+}
+
+.subnav-hero-subnav li a {
+  padding: 0.9rem 1rem;
+  font-size: 0.75rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+.typewrite {
+  color: #ffffff;
+}
+
+#contact {
+  background: #2196F3;
+  margin: auto;
+  width: 35em;
+}
+
+.input-field label {
+  color: #ffffff;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #2196F3;
+}
+
+button[type="submit"] {
+  margin: 1em;
+}
+
+.social {
+  margin-top: 2em;
+}
