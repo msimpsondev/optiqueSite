@@ -3,92 +3,58 @@ body {
   color:#fff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-size: 12pt;
 }
 
-img#logo {
-  width: 30em;
-}
-
-
-.subnav-hero-section {
-
+nav {
   background: #2196F3;
-  background-size: cover;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 300px;
-  overflow: visible;
-  position: relative;
-  text-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-
+  height: 10.4em;
 }
 
-.subnav-hero-section .subnav-hero-headline {
-  color: #fefefe;
+nav .nav-extended {
+  background: #2196F3;
 }
 
-.subnav-hero-subnav {
-  float: none;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  bottom: 0;
-  width: 100%;
-}
-
-.subnav-hero-subnav li {
-  float: none;
-  display: inline-block;
-}
-
-.subnav-hero-subnav li a {
-  padding: 0.9rem 1rem;
-  font-size: 0.75rem;
-  color: #fefefe;
-  text-transform: uppercase;
-  display: block;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.35s ease-in-out;
-}
-
-.subnav-hero-subnav li a.is-active {
-  background: rgba(254, 254, 254, 0.15);
-}
-
-.subnav-hero-subnav li a:hover {
-  background: rgba(254, 254, 254, 0.15);
+nav .brand-logo img {
+  height: 5.7em;
+  padding-bottom: 1em;
 }
 
 .typewrite {
   color: #ffffff;
 }
 
-#contact {
-  background: #2196F3;
-  margin: auto;
-  width: 35em;
+.content {
+  margin-left: 10em;
+  margin-right: 10em;
+  width: 75%;
 }
 
-.input-field label {
-  color: #ffffff;
+.client {
+  width: 40em;
 }
 
-.input-field input[type=text]:focus + label {
-  color: #2196F3;
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    color: white;
 }
-
-button[type="submit"] {
-  margin: 1em;
+      
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #24221F;
 }
 
 .social {
-  margin-top: 2em;
+  margin: 2em .5em 2em .5em;
 }
